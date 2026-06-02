@@ -123,7 +123,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="RepositoryCopy.cpp" />
+    <ClCompile Include="Homework.cpp" />
+    <ClCompile Include="Map.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Warship.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Homework.h" />
+    <ClInclude Include="Map.h" />
+    <ClInclude Include="Warship.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
