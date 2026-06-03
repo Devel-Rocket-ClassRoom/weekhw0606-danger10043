@@ -1,28 +1,21 @@
 #pragma once
-#include "Map.h"
+#include <string>
 
 class Warship {
 public:
 	int PosR = 0, PosC = 0;
 	int Length = 0;
 	int Health = 0;
+	std::string ShipName = "";
 	
-	Warship() {
-		this->PosR = 0;
-		this->PosC = 0;
-		this->Length = 0;
-		this->Health = 0;
-	}
+	std::string NameList[6] = {
+		"", "", "구축함", "순양함", "전함", "항공모함"
+	};
 
-	Warship(int PosR, int PosC, int Length) {
-		this->PosR = PosR;
-		this->PosC = PosC;
-		this->Length = Length;
-		this->Health = Length;
-	}
+	Warship();
 
-	Warship(int PosValue, int Length) {
-		Warship(PosValue / MAP_COLUMN, PosValue % MAP_COLUMN, Length);
-	}
+	Warship(int PosR, int PosC, int Length);
+
+	Warship(int PosValue, int Length);
 
 };
