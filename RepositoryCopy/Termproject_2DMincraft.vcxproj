@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{44ef4524-9042-4246-961b-cb394edcbc8b}</ProjectGuid>
-    <RootNamespace>RepositoryCopy</RootNamespace>
+    <ProjectGuid>{fba33541-f2f0-4a5f-8c59-9292d51bb980}</ProjectGuid>
+    <RootNamespace>Termproject2DMincraft</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -102,6 +102,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -123,15 +125,41 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Homework.cpp" />
-    <ClCompile Include="Map.cpp" />
-    <ClCompile Include="Main.cpp" />
-    <ClCompile Include="Warship.cpp" />
+    <ClCompile Include="basic.cpp" />
+    <ClCompile Include="battle.cpp" />
+    <ClCompile Include="Block.cpp" />
+    <ClCompile Include="BlockData.cpp" />
+    <ClCompile Include="Buff.cpp" />
+    <ClCompile Include="colorprint.cpp" />
+    <ClCompile Include="Item.cpp" />
+    <ClCompile Include="itemdata.cpp" />
+    <ClCompile Include="itemUse.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Monster.cpp" />
+    <ClCompile Include="MonsterFactory.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="random.cpp" />
+    <ClCompile Include="RenderBlock.cpp" />
+    <ClCompile Include="World.cpp" />
+    <ClCompile Include="WorldGenerate.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Homework.h" />
-    <ClInclude Include="Map.h" />
-    <ClInclude Include="Warship.h" />
+    <ClInclude Include="basic.h" />
+    <ClInclude Include="battle.h" />
+    <ClInclude Include="Block.h" />
+    <ClInclude Include="BlockData.h" />
+    <ClInclude Include="Buff.h" />
+    <ClInclude Include="colorprint.h" />
+    <ClInclude Include="Item.h" />
+    <ClInclude Include="itemdata.h" />
+    <ClInclude Include="itemUse.h" />
+    <ClInclude Include="Monster.h" />
+    <ClInclude Include="MonsterFactory.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="random.h" />
+    <ClInclude Include="RenderBlock.h" />
+    <ClInclude Include="World.h" />
+    <ClInclude Include="WorldGenerate.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
